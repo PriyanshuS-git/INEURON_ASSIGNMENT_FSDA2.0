@@ -1,0 +1,13 @@
+1. What does the dollar($) sign do?
+Answer-
+In Excel, the dollar sign ($) is used as a symbol to create absolute cell references or absolute references in formulas. Here's a short explanation of what the dollar sign does:
+
+1. Absolute Cell Reference: By placing a dollar sign before the column letter or row number (or both) in a cell reference, you can make that part of the reference fixed or absolute. For example, "$A$1" refers to cell A1 as an absolute reference.
+
+2. Locking Column or Row: If you place a dollar sign before the column letter but not the row number (e.g., "$A1"), the column reference remains constant while the row reference can change when the formula is copied or filled vertically.
+
+3. Locking Row or Column: Conversely, if you place a dollar sign before the row number but not the column letter (e.g., "A$1"), the row reference stays fixed while the column reference can adjust when the formula is copied or filled horizontally.
+
+Using the dollar sign in cell references allows you to maintain a fixed reference to a specific cell or range, regardless of where the formula is copied or filled. This can be helpful when you want to refer to a specific cell or range consistently, especially when working with formulas that involve calculations across multiple cells or when referencing external data.
+
+2.
