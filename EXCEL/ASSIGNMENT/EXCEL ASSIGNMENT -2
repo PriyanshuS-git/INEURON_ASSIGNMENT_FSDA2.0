@@ -10,4 +10,90 @@ In Excel, the dollar sign ($) is used as a symbol to create absolute cell refere
 
 Using the dollar sign in cell references allows you to maintain a fixed reference to a specific cell or range, regardless of where the formula is copied or filled. This can be helpful when you want to refer to a specific cell or range consistently, especially when working with formulas that involve calculations across multiple cells or when referencing external data.
 
-2.
+2. How to Change the Reference from Relative to Absolute (or Mixed)?
+Answer-
+To change the reference from relative to absolute or mixed in Excel:
+
+Relative to Absolute:
+-Select the cell or range of cells containing the relative references.
+-Press the F4 key on your keyboard to toggle through different reference types.
+-Keep pressing F4 until you reach the desired absolute reference (e.g., $A$1).
+
+Relative to Mixed:
+-Select the cell or range of cells containing the relative references.
+-Press the F4 key on your keyboard to toggle through different reference types.
+-Stop at the desired mixed reference by using either an absolute row with a relative column (e.g., $A1) or a relative row with an absolute column (e.g., A$1).
+
+By using these simple keyboard shortcuts, you can quickly change the reference types in Excel.
+
+3. Explain the order of operations in Excel?
+Answer-
+
+The order of operations in Excel, also known as the precedence of operators, determines the sequence in which mathematical and logical operations are performed. The order of operations in Excel follows the acronym PEMDAS:
+
+1. Parentheses: Operations inside parentheses are performed first. Excel evaluates expressions within parentheses before any other operation.
+
+2. Exponents: Exponentiation is the next operation. Excel calculates any expressions involving exponents.
+
+3. Multiplication and Division: Excel performs multiplication and division operations from left to right. These operations have the same level of precedence, so they are evaluated in the order they appear.
+
+4. Addition and Subtraction: Similarly, Excel performs addition and subtraction operations from left to right. These operations also have the same level of precedence and are evaluated in the order they appear.
+
+5. Comparison Operators: If any comparison operators (e.g., =, >, <) are present in the expression, Excel evaluates them next. These operators compare values and return logical results (TRUE or FALSE).
+
+6. Logical Operators: Logical operators (e.g., AND, OR) are evaluated after the comparison operators. They allow you to combine logical expressions and return logical results.
+
+7. Concatenation: If there are text values involved, Excel performs concatenation, which combines text strings using the "&" operator.
+
+Excel follows this order of operations to ensure that calculations are carried out correctly and consistently. It's important to be aware of these rules when creating formulas in Excel to obtain accurate results.
+
+4. What, according to you, are the top 5 functions in Excel, and write a basic syntax for any of the two?
+Answer-
+Certainly! Here's an explanation of the top 5 Excel functions:
+1. SUM:
+The SUM function is used to calculate the sum of a range of values. It adds up the numbers you specify as arguments.
+Syntax: =SUM(number1, [number2], ...)
+Example: =SUM(A1:A10) calculates the sum of values in cells A1 to A10.
+
+2. VLOOKUP:
+The VLOOKUP function is used to search for a value in the leftmost column of a table and retrieve a corresponding value from a specified column in the same row.
+Syntax: =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+Example: =VLOOKUP(A2, B2:C10, 2, FALSE) searches for the value in cell A2 in the range B2:C10 and returns the corresponding value from the second column.
+
+3. IF:
+The IF function allows you to perform conditional evaluations. It checks a given condition and returns one value if the condition is true, and another value if it is false.
+Syntax: =IF(logical_test, value_if_true, value_if_false)
+Example: =IF(A1>10, "Greater than 10", "Less than or equal to 10") checks if the value in cell A1 is greater than 10 and returns the appropriate text based on the result.
+
+4. COUNT:
+The COUNT function is used to count the number of cells within a range that contain numbers or values.
+Syntax: =COUNT(value1, [value2], ...)
+Example: =COUNT(A1:A10) counts the number of non-empty cells in the range A1:A10.
+
+5. CONCATENATE:
+The CONCATENATE function is used to combine multiple text strings into a single string.
+Syntax: =CONCATENATE(text1, [text2], ...)
+Example: =CONCATENATE(A1, " ", B1) combines the text from cells A1 and B1 with a space in between.
+
+These functions are widely used in Excel to perform calculations, look up data, perform conditional operations, count cells, and concatenate text. Understanding and utilizing these functions can greatly enhance your ability to manipulate and analyze data in Excel.
+
+5. When would you use the subtotal function?
+Answer-
+The SUBTOTAL function in Excel is used to perform calculations on a range of data while ignoring other SUBTOTAL functions within the range. It is commonly used when you have a range of data with subtotals already calculated, and you want to perform additional calculations on the data while excluding the subtotals.
+
+Here are a few scenarios where the SUBTOTAL function can be useful:
+
+1. Filtering Data: When you have filtered your data using Excel's filter feature, the SUBTOTAL function can be used to calculate various statistics or perform calculations only on the visible (filtered) data, ignoring the hidden rows.
+
+2. Grouping Data: If you have grouped data in Excel using the Group feature, the SUBTOTAL function can be used to calculate totals, averages, or other calculations within each group while ignoring the subtotals that are automatically generated.
+
+3. Nested Subtotals: In situations where you have already used the SUBTOTAL function to calculate subtotals in a range, you can use the SUBTOTAL function again to perform calculations on the remaining data, excluding the previously calculated subtotals.
+
+The SUBTOTAL function is particularly useful when working with large datasets or when you need to perform calculations on subsets of data based on certain criteria. It provides flexibility in performing calculations while ignoring specific subtotals or filtered rows, allowing for more accurate analysis and reporting in Excel.
+
+6. What is the syntax of the vlookup function? Explain the terms in it?
+Answer-
+The VLOOKUP function is used to search for a value in the leftmost column of a table and retrieve a corresponding value from a specified column in the same row.
+Syntax: =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+Example: =VLOOKUP(A2, B2:C10, 2, FALSE) searches for the value in cell A2 in the range B2:C10 and returns the corresponding value from the second column.
+
